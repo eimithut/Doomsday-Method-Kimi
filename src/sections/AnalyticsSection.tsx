@@ -9,13 +9,13 @@ import {
   TrendingUp, Target, Clock, Zap, Trash2, ArrowLeft, AlertTriangle,
   BarChart3,
 } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '../hooks/useTranslation';
 import {
   getAllSessions, getAccuracyByCentury, getAccuracyByMonth, getProgressOverTime,
   getAllAnswers, getStateDistribution, getWeaknessAnalysis, clearAllData,
-} from '@/lib/db';
-import { getMonthNames } from '@/lib/i18n';
-import type { AppView, Lang } from '@/types';
+} from '../lib/db';
+import { getMonthNames } from '../lib/i18n';
+import type { AppView, Lang } from '../types';
 
 interface DashboardData {
   sessions: Awaited<ReturnType<typeof getAllSessions>>;

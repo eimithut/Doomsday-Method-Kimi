@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, ChevronLeft, Lightbulb, Calendar, Hash, Award, ArrowLeft, HelpCircle, X } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '../hooks/useTranslation';
 import {
   getCenturyAnchor, getYearDoomsday, getMonthDoomsday, calculateWeekday,
   isLeapYear, COMMON_CENTURY_ANCHORS,
-} from '@/lib/doomsday';
-import type { AppView, Lang, LearnStep } from '@/types';
+} from '../lib/doomsday';
+import type { AppView, Lang, LearnStep } from '../types';
 
 interface LearnSectionProps {
   onNavigate: (view: AppView) => void;

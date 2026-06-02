@@ -9,7 +9,7 @@
  *  - daily_results: Completed daily challenges
  */
 import { openDB, type DBSchema, type IDBPDatabase } from 'idb';
-import type { Session, Answer, UserStats, DailyResult } from '@/types';
+import type { Session, Answer, UserStats, DailyResult } from '../types';
 
 const DB_NAME = 'doomsday_db';
 const DB_VERSION = 2;

@@ -1,15 +1,15 @@
 import { useState, useCallback, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Globe } from 'lucide-react';
-import { Navigation } from '@/components/Navigation';
-import { OrbBackground } from '@/components/OrbBackground';
-import { HeroSection } from '@/sections/HeroSection';
-import { LearnSection } from '@/sections/LearnSection';
-import { TrainSection } from '@/sections/TrainSection';
-import { DailySection } from '@/sections/DailySection';
-import { AnalyticsSection } from '@/sections/AnalyticsSection';
-import type { AppView, Lang } from '@/types';
-import { nextLang, LANG_LABELS } from '@/lib/i18n';
+import { Navigation } from './components/Navigation';
+import { OrbBackground } from './components/OrbBackground';
+import { HeroSection } from './sections/HeroSection';
+import { LearnSection } from './sections/LearnSection';
+import { TrainSection } from './sections/TrainSection';
+import { DailySection } from './sections/DailySection';
+import { AnalyticsSection } from './sections/AnalyticsSection';
+import type { AppView, Lang } from './types';
+import { nextLang, LANG_LABELS } from './lib/i18n';
 import './index.css';
 
 function App() {

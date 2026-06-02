@@ -3,18 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, Zap, Share2, X, Check, Copy, HelpCircle,
 } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
-import { calculateWeekday } from '@/lib/doomsday';
+import { useTranslation } from '../hooks/useTranslation';
+import { calculateWeekday } from '../lib/doomsday';
 import {
   getOrCreateUserStats, updateUserStats, hasCompletedDaily,
   saveDailyResult,
-} from '@/lib/db';
+} from '../lib/db';
 import {
   dateSeed, generateSeededDates, getTodayKey, getTimeUntilNextDay,
   formatCountdown,
-} from '@/lib/prng';
-import type { AppView, Lang, Weekday, DailyResult } from '@/types';
-import { WEEKDAY_ORDER, DAILY_QUESTION_COUNT } from '@/types';
+} from '../lib/prng';
+import type { AppView, Lang, Weekday, DailyResult } from '../types';
+import { WEEKDAY_ORDER, DAILY_QUESTION_COUNT } from '../types';
 
 interface DailySectionProps {
   onNavigate: (view: AppView) => void;

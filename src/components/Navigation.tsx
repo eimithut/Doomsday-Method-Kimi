@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { BookOpen, Target, BarChart3, Brain, CalendarDays } from 'lucide-react';
-import type { AppView, Lang } from '@/types';
-import { useTranslation } from '@/hooks/useTranslation';
+import type { AppView, Lang } from '../types';
+import { useTranslation } from '../hooks/useTranslation';
 
 interface NavigationProps {
   currentView: AppView;

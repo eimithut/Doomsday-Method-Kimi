@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, CalendarDays, Zap } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
-import { getOrCreateUserStats, hasCompletedDaily } from '@/lib/db';
-import { getTodayKey } from '@/lib/prng';
-import type { AppView, Lang } from '@/types';
+import { useTranslation } from '../hooks/useTranslation';
+import { getOrCreateUserStats, hasCompletedDaily } from '../lib/db';
+import { getTodayKey } from '../lib/prng';
+import type { AppView, Lang } from '../types';
 
 interface HeroSectionProps {
   onNavigate: (view: AppView) => void;

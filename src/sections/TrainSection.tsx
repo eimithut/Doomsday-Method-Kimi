@@ -1,11 +1,11 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Infinity as InfinityIcon, Pause, Play, RotateCcw, ArrowLeft, HelpCircle, X, Check } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
-import { calculateWeekday } from '@/lib/doomsday';
-import { addAnswer, createSession } from '@/lib/db';
-import type { AppView, Lang, TrainingMode, Weekday, CenturyFilter, TrainingStats } from '@/types';
-import { WEEKDAY_ORDER, DEFAULT_CENTURY_FILTER, TIME_ATTACK_SECONDS } from '@/types';
+import { useTranslation } from '../hooks/useTranslation';
+import { calculateWeekday } from '../lib/doomsday';
+import { addAnswer, createSession } from '../lib/db';
+import type { AppView, Lang, TrainingMode, Weekday, CenturyFilter, TrainingStats } from '../types';
+import { WEEKDAY_ORDER, DEFAULT_CENTURY_FILTER, TIME_ATTACK_SECONDS } from '../types';
 
 const INITIAL_STATS: TrainingStats = {
   streak: 0, bestStreak: 0, totalCorrect: 0,
